@@ -53,12 +53,11 @@ class PropertySpider(scrapy.Spider):
             date = response.css('div.flex.justify-between.py-2 span.font-semibold::text').get()
 
             amenities = []
-            # Extract features from each category
             sections = response.css('div[data-cy="listing-amenities-component"] div.flex.flex-col')
             for section in sections:
                 # Extract features for the current section
                 features = section.css('ul.flex li div::text').getall()
-                amenities.extend([feature.strip() for feature in features if feature.strip()])            # cleaned_amenities = [amenity.strip() for amenity in amenities if amenity.strip()]
+                amenities.extend([feature.strip() for feature in features if feature.strip()])
             
             price = response.css('span.block.text-right.text-xl.font-semibold.leading-7.md\\:text-xxl.md\\:font-extrabold::text').get()
             

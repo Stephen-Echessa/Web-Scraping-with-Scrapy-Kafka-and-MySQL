@@ -1,12 +1,13 @@
 from kafka import KafkaConsumer
 import mysql.connector
 import json
+import os
 
 # Connect to MySQL
 db_connection = mysql.connector.connect(
     host='localhost',
     user='root',
-    password='Joyrid31',
+    password=os.getenv('MYSQL_PASSWORD'),
     database='real_estate'
 )
 cursor = db_connection.cursor()
