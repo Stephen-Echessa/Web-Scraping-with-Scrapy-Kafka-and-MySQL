@@ -1,0 +1,2 @@
+[scrapy]
+settings = scrapy_kafka_project.settings

@@ -1,0 +1,13 @@
+setup.py
+project.egg-info/PKG-INFO
+project.egg-info/SOURCES.txt
+project.egg-info/dependency_links.txt
+project.egg-info/entry_points.txt
+project.egg-info/top_level.txt
+scrapy_kafka_project/__init__.py
+scrapy_kafka_project/items.py
+scrapy_kafka_project/middlewares.py
+scrapy_kafka_project/pipelines.py
+scrapy_kafka_project/settings.py
+scrapy_kafka_project/spiders/__init__.py
+scrapy_kafka_project/spiders/property_scraper.py

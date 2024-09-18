@@ -3,6 +3,9 @@ import mysql.connector
 import json
 import os
 
+from dotenv import load_dotenv
+load_dotenv()
+
 # Connect to MySQL
 db_connection = mysql.connector.connect(
     host='localhost',
